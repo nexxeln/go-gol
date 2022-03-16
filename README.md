@@ -4,7 +4,7 @@
 
 ## Overview
 
-Yet another implementation of the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), this time in Go.
+Yet another implementation of the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), this time in Go. This was just to practice my newly acquired Go skills.
 
 If you're not familiar with the rules of the game, here's a quick overview from Wikipedia:
 
