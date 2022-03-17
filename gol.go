@@ -79,7 +79,7 @@ func main() {
 		}
 	}
 
-	if err := ebiten.Run(frame, width, height, 1, "Game of Life"); err != nil {
+	if err := ebiten.Run(frame, width, height, 2, "Game of Life"); err != nil {
 		log.Fatal(err)
 	}
 }
