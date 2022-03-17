@@ -12,8 +12,8 @@ const scale int = 2
 const width = 300
 const height = 300
 
-var yellow color.Color = color.RGBA{69, 145, 196, 255}
-var blue color.Color = color.RGBA{255, 230, 120, 255}
+var blue color.Color = color.RGBA{69, 145, 196, 255}
+var yellow color.Color = color.RGBA{255, 230, 120, 255}
 var grid [width][height]uint8 = [width][height]uint8{}
 var buffer [width][height]uint8 = [width][height]uint8{}
 var count int = 0
@@ -41,14 +41,14 @@ func update() error {
 }
 
 func display(window *ebiten.Image) {
-	window.Fill(yellow)
+	window.Fill(blue)
 
 	for x := 0; x < width; x++ {
 		for y := 0; y < height; y++ {
 			for i := 0; i < scale; i++ {
 				for j := 0; j < scale; j++ {
 					if grid[x][y] == 1 {
-						window.Set(x*scale+i, y*scale+j, blue)
+						window.Set(x*scale+i, y*scale+j, yellow)
 					}
 				}
 			}
